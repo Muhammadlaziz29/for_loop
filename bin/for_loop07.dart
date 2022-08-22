@@ -1,4 +1,3 @@
-int func(List<int> numbers, int k, int n) {
 /*
    Given the list of numbers, return the sum of the even numbers between k and n in the list
 Args:
@@ -8,7 +7,19 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+
+
+int func(List<int> numbers, int k, int n) {
+  int x = 0;
+  for (int i = k; i < n; i++) {
+    if (numbers[i]%2==0) {
+      x += numbers[i];
+    }
+    
+  }
+  return x;
 }
 
-void main() {}
+void main() {
+  print(func([1,2,3,4,5,6,7,8], 2,5));
+}
