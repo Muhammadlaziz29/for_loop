@@ -10,7 +10,7 @@ Return:
 int func(List<int> numbers) {
     int x = 0;
     for(int i = 0; i<numbers.length; i+=1 ) {
-      if (numbers[i]%2 == 1 ) {
+      if (i%2 == 1 ) {
         x+=numbers[i];
       }
     }
